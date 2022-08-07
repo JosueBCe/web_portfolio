@@ -1,7 +1,7 @@
 import React from 'react'
 import "./portafolio.css"
 import IMG1 from "../../assets/portfolio1.png"
-import IMG2 from "../../assets/portfolio2.jpg"
+import IMG2 from "../../assets/portfolio2.png"
 import IMG3 from "../../assets/portfolio3.jpg"
 import IMG4 from "../../assets/portfolio4.jpg"
 import IMG5 from "../../assets/portfolio5.png"
@@ -27,8 +27,8 @@ const Portafolio = () => {
         </div>
         <h3>Water Rafting Web Page</h3>
           <div className="portafolio__item-cta">
-            <a href="https://github.com" className='btn'>GitHub</a>
-            <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
+            <a href="https://github.com/JosueBCe/wdd-130-/tree/main/wwr" className='btn' target={"_blank"}>GitHub</a>
+            <a href="https://josuebce.github.io/wdd-130-/wwr/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
           </div>
       </article>
       <article className='portafolio__items'>
@@ -37,11 +37,11 @@ const Portafolio = () => {
         </div>
         <h3>This is a portafolio item title</h3>
         <div className="portafolio__item-cta">
-          <a href="https://github.com" className='btn'>GitHub</a>
-          <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
+          <a href="https://github.com/JosueBCe/wdd-130-/tree/main/crypto" className='btn' target={"_blank"}>GitHub</a>
+          <a href="https://josuebce.github.io/wdd-130-/crypto/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
           </div>
       </article>
-      <article className='portafolio__items'>
+      {/* <article className='portafolio__items'>
         <div className="portafolio__item-image">
           <img src={IMG3} alt="portafolio3" />
         </div>
@@ -80,7 +80,7 @@ const Portafolio = () => {
           <a href="https://github.com" className='btn'>GitHub</a>
           <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
         </div>
-      </article>
+      </article> */}
     </div>
 
   </section>

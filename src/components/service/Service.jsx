@@ -89,7 +89,7 @@ const Services = () => {
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Possible multi-language web page in Portuguese, English or Spanish 
+              <p>Web pages in Portuguese, English or Spanish 
               </p>
             </li>
             <li>
