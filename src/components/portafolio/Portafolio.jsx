@@ -16,32 +16,32 @@ import IMG6 from "../../assets/portfolio6.jpg"
 
 const Portafolio = () => {
   return (
-  <section id='portafolio' >
-    <h5>My Recent Work</h5>
-    <h2>Portafolio</h2>
+    <section id='portafolio' >
+      <h5>My Recent Work</h5>
+      <h2>Portafolio</h2>
 
-    <div className="container portafolio__container">
-      <article className='portafolio__items'>
-        <div className="portafolio__item-image">
-          <img src={IMG1} alt="portafolio1" />
-        </div>
-        <h3>Water Rafting</h3>
+      <div className="container portafolio__container">
+        <article className='portafolio__items'>
+          <div className="portafolio__item-image">
+            <img src={IMG1} alt="portafolio1" />
+          </div>
+          <h3>Water Rafting</h3>
           <div className="portafolio__item-cta">
             <a href="https://github.com/JosueBCe/wdd-130-/tree/main/wwr" className='btn' target={"_blank"}>GitHub</a>
             <a href="https://josuebce.github.io/wdd-130-/wwr/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
           </div>
-      </article>
-      <article className='portafolio__items'>
-        <div className="portafolio__item-image">
-          <img src={IMG2} alt="portafolio2" />
-        </div>
-        <h3>Crypto Investment</h3>
-        <div className="portafolio__item-cta">
-          <a href="https://github.com/JosueBCe/wdd-130-/tree/main/crypto" className='btn' target={"_blank"}>GitHub</a>
-          <a href="https://josuebce.github.io/wdd-130-/crypto/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
+        </article>
+        <article className='portafolio__items'>
+          <div className="portafolio__item-image">
+            <img src={IMG2} alt="portafolio2" />
           </div>
-      </article>
-      {/* <article className='portafolio__items'>
+          <h3>Crypto Investment</h3>
+          <div className="portafolio__item-cta">
+            <a href="https://github.com/JosueBCe/wdd-130-/tree/main/crypto" className='btn' target={"_blank"}>GitHub</a>
+            <a href="https://josuebce.github.io/wdd-130-/crypto/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
+          </div>
+        </article>
+        {/* <article className='portafolio__items'>
         <div className="portafolio__item-image">
           <img src={IMG3} alt="portafolio3" />
         </div>
@@ -81,10 +81,10 @@ const Portafolio = () => {
           <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
         </div>
       </article> */}
-    </div>
+      </div>
 
-  </section>
-  
+    </section>
+
   )
 }
 

@@ -79,7 +79,7 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <FaRegCheckSquare />
-              <p>Flexible approach. 
+              <p>Flexible approach.
               </p>
             </li>
             <li>
@@ -94,7 +94,7 @@ const Services = () => {
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Planning for regular Updating Content. 
+              <p>Planning for regular Updating Content.
               </p>
             </li>
             <li>
