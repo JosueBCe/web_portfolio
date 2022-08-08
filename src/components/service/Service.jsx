@@ -16,27 +16,27 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <FaRegCheckSquare />
-              <p> Wire-frame creation for each project
+              <p> Wire-frame creation for each project.
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p> Presentation of Site-Plan
+              <p> Presentation of Site-Plan.
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p> Benchmark analysis to apply best techniques
+              <p> Benchmark analysis.
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p> Best practices approach
+              <p> Best practices approach.
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Continued improvement process
+              <p>Continued improvement process.
               </p>
             </li>
           </ul>
@@ -49,25 +49,25 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <FaRegCheckSquare />
-              <p>Full Responsive Design</p>
+              <p>Full Responsive Design.</p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Flexible and Scalable Web Apps </p>
+              <p>Flexible and Scalable Web Apps. </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Customized colors and design</p>
+              <p>Customized colors and design.</p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Customized architecture
+              <p>Customized architecture.
 
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Single Page aplicacation possible to implement</p>
+              <p>Single Page aplicacation.</p>
             </li>
           </ul>
         </article>
@@ -79,27 +79,27 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <FaRegCheckSquare />
-              <p>Flexible approach 
+              <p>Flexible approach. 
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Audience analysis and hooking writing techniques
+              <p>Audience analysis and hooking writing techniques.
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Web pages in Portuguese, English or Spanish 
+              <p>Web pages in Portuguese, English or Spanish.
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Planning for regular Updating Content 
+              <p>Planning for regular Updating Content. 
               </p>
             </li>
             <li>
               <FaRegCheckSquare />
-              <p>Search Engine Optimization</p>
+              <p>Search Engine Optimization.</p>
             </li>
           </ul>
         </article>
