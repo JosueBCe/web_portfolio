@@ -35,10 +35,10 @@ const Portafolio = () => {
           <div className="portafolio__item-image">
             <img src={IMG2} alt="portafolio2" />
           </div>
-          <h3>Crypto Investment</h3>
+          <h3>Multitrack Challenge </h3>
           <div className="portafolio__item-cta">
-            <a href="https://github.com/JosueBCe/wdd-130-/tree/main/crypto" className='btn' target={"_blank"}>GitHub</a>
-            <a href="https://josuebce.github.io/wdd-130-/crypto/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
+            <a href="https://github.com/JosueBCe/M_Track_challenge" className='btn' target={"_blank"}>GitHub</a>
+            <a href="https://josuebce.github.io/M_Track_challenge/#" className='btn btn-primary' target={"_blank"}>Live Demo</a>
           </div>
         </article>
         {/* <article className='portafolio__items'>
