@@ -2,7 +2,7 @@ import React from 'react'
 import "./portafolio.css"
 import IMG1 from "../../assets/portfolio1.png"
 import IMG2 from "../../assets/portfolio2.png"
-import IMG3 from "../../assets/portfolio3.jpg"
+import IMG3 from "../../assets/portfolio3.png"
 import IMG4 from "../../assets/portfolio4.jpg"
 import IMG5 from "../../assets/portfolio5.png"
 import IMG6 from "../../assets/portfolio6.jpg"
@@ -41,17 +41,17 @@ const Portafolio = () => {
             <a href="https://josuebce.github.io/M_Track_challenge/#" className='btn btn-primary' target={"_blank"}>Live Demo</a>
           </div>
         </article>
-        {/* <article className='portafolio__items'>
+         <article className='portafolio__items'>
         <div className="portafolio__item-image">
           <img src={IMG3} alt="portafolio3" />
         </div>
-        <h3>This is a portafolio item title</h3>
+        <h3> Chamber of Commerce Site-Plan </h3>
         <div className="portafolio__item-cta">
-          <a href="https://github.com" className='btn'>GitHub</a>
-          <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
+          <a href="https://github.com/JosueBCe/wdd230/tree/main/lesson3" className='btn'  target={"_blank"}>GitHub</a>
+          <a href="https://josuebce.github.io/wdd230/lesson3/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
           </div>
       </article>
-      <article className='portafolio__items'>
+      {/*<article className='portafolio__items'>
         <div className="portafolio__item-image">
           <img src={IMG4} alt="portafolio4" />
         </div>

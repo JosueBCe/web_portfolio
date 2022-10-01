@@ -18,14 +18,14 @@ const Experience = () => {
               <BsShieldFillCheck className="experience__details-icon" />
               <div>
                 <h4>HTML</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Advanced</small>
               </div>
             </article>
             <article className='experience__details'>
               <BsShieldFillCheck className="experience__details-icon" />
               <div>
                 <h4>CSS</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Advanced</small>
               </div>
             </article>
             <article className='experience__details'>
@@ -39,7 +39,14 @@ const Experience = () => {
               <BsShieldFillCheck className="experience__details-icon" />
               <div>
                 <h4>React.Js</h4>
-                <small className='text-light'>Basic</small>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsShieldFillCheck className="experience__details-icon" />
+              <div>
+                <h4>SCSS/SASS</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
           </div>
@@ -51,7 +58,7 @@ const Experience = () => {
               <BsShieldFillCheck className="experience__details-icon" />
               <div>
                 <h4>Python</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Advanced</small>
               </div>
             </article>
             <article className='experience__details'>
