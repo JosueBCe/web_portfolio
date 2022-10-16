@@ -3,7 +3,7 @@ import "./portafolio.css"
 import IMG1 from "../../assets/portfolio1.png"
 import IMG2 from "../../assets/portfolio2.png"
 import IMG3 from "../../assets/portfolio3.png"
-import IMG4 from "../../assets/portfolio4.jpg"
+import IMG4 from "../../assets/portfolio4.png"
 import IMG5 from "../../assets/portfolio5.png"
 import IMG6 from "../../assets/portfolio6.jpg"
 
@@ -51,16 +51,17 @@ const Portafolio = () => {
           <a href="https://josuebce.github.io/wdd230/lesson3/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
           </div>
       </article>
-      {/*<article className='portafolio__items'>
+      <article className='portafolio__items'>
         <div className="portafolio__item-image">
           <img src={IMG4} alt="portafolio4" />
         </div>
-        <h3>This is a portafolio item title</h3>
+        <h3>Argentine Chamber of Commerce </h3>
         <div className="portafolio__item-cta">
-          <a href="https://github.com" className='btn'>GitHub</a>
-          <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
+          <a href="https://github.com/JosueBCe/wdd230/tree/main/chamber" className='btn'>GitHub</a>
+          <a href="https://josuebce.github.io/wdd230/chamber/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
           </div>
       </article>
+      {/*
       <article className='portafolio__items'>
         <div className="portafolio__item-image">
           <img src={IMG5} alt="portafolio5" />
