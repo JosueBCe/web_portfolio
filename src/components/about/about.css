@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .about__me {
@@ -73,7 +75,7 @@
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
-
+       
 
     }
     .about__me {
@@ -96,8 +98,9 @@
     }   
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
+        margin: 1.5rem;
     }
 
     .about__content {
@@ -107,3 +110,4 @@
         margin: 1.5rem 0;
     }
 }
+

@@ -1,11 +1,12 @@
 import React from 'react'
 import "./portafolio.css"
-import IMG1 from "../../assets/portfolio1.png"
+
 import IMG2 from "../../assets/portfolio2.png"
 import IMG3 from "../../assets/portfolio3.png"
 import IMG4 from "../../assets/portfolio4.png"
-import IMG5 from "../../assets/portfolio5.png"
-import IMG6 from "../../assets/portfolio6.jpg"
+// import IMG5 from "../../assets/portfolio5.png"
+// import IMG6 from "../../assets/portfolio6.jpg"
+// import IMG1 from "../../assets/portfolio1.png"
 
 /* steps 
 1. Copy all 
@@ -21,7 +22,7 @@ const Portafolio = () => {
       <h2>Portafolio</h2>
 
       <div className="container portafolio__container">
-        <article className='portafolio__items'>
+        {/* <article className='portafolio__items'>
           <div className="portafolio__item-image">
             <img src={IMG1} alt="portafolio1" />
           </div>
@@ -30,7 +31,7 @@ const Portafolio = () => {
             <a href="https://github.com/JosueBCe/wdd-130-/tree/main/wwr" className='btn' target={"_blank"}>GitHub</a>
             <a href="https://josuebce.github.io/wdd-130-/wwr/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
           </div>
-        </article>
+        </article> */}
         <article className='portafolio__items'>
           <div className="portafolio__item-image">
             <img src={IMG2} alt="portafolio2" />

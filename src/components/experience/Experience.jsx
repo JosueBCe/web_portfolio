@@ -1,7 +1,14 @@
 import React from 'react'
 import "./experience.css"
 import { BsShieldFillCheck } from "react-icons/bs"
-
+import {ImHtmlFive} from "react-icons/im"
+import {SiCss3} from "react-icons/si"
+import {SiJavascript} from "react-icons/si"
+import {FaReact} from "react-icons/fa"
+import {IoLogoSass} from "react-icons/io"
+import {SiPython} from "react-icons/si"
+import {SiMongodb} from "react-icons/si"
+import {SiNodedotjs} from "react-icons/si"
 
 
 const Experience = () => {
@@ -15,35 +22,35 @@ const Experience = () => {
           <h3>Frontend Development </h3>
           <div className='experience__content'>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <ImHtmlFive className="experience__details-icon" />
               <div>
                 <h4>HTML</h4>
                 <small className='text-light'>Advanced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <SiCss3 className="experience__details-icon" />
               <div>
                 <h4>CSS</h4>
                 <small className='text-light'>Advanced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <SiJavascript className="experience__details-icon" />
               <div>
                 <h4>JavaScript</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <FaReact className="experience__details-icon" />
               <div>
                 <h4>React.Js</h4>
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <IoLogoSass className="experience__details-icon" />
               <div>
                 <h4>SCSS/SASS</h4>
                 <small className='text-light'>Intermediate</small>
@@ -55,21 +62,21 @@ const Experience = () => {
           <h3>Backend Development </h3>
           <div className='experience__content'>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <SiPython className="experience__details-icon" />
               <div>
                 <h4>Python</h4>
                 <small className='text-light'>Advanced</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <SiMongodb className="experience__details-icon" />
               <div>
                 <h4>MongoDB</h4>
                 <small className='text-light'>Basic</small>
               </div>
             </article>
             <article className='experience__details'>
-              <BsShieldFillCheck className="experience__details-icon" />
+              <SiNodedotjs className="experience__details-icon" />
               <div>
                 <h4>Node.Js</h4>
                 <small className='text-light'>Basic</small>

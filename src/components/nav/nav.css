@@ -12,6 +12,7 @@ nav {
     gap: 0.8rem;
     border-radius: 2rem;
     backdrop-filter: blur(15px);
+    justify-content: center;
 }
 
 nav a {
@@ -31,5 +32,13 @@ nav a:hover {
 nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+
+@media screen and (max-width: 375px){ 
+    nav a {
+        padding: .5rem;
+    }
+    
 }
 

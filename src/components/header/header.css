@@ -1,16 +1,17 @@
 header {
-    height: 100vh;
-    padding: 7rem;
+    height: 75vh;
+    margin: 3rem auto;
     overflow: hidden;
-        
 }
 
 .header__container {
     text-align: center;
     height: 100%;
     position: relative;
-    
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
+
 
 
 
@@ -45,12 +46,12 @@ header {
 /* ============== ME =========================== */
 .me {
     background:linear-gradient(var(--color-primary), transparent);
-    width: 18rem;
+    width: 16rem;
     height: 30rem;
     position: absolute;
-    left: calc(50% - 9rem);
-    margin-top: 1rem;
-    border-radius: 12rem 12rem 0 0;
+    left: calc(50% - 7.8rem);
+    margin-top: 3rem;
+    border-radius: 1rem 1rem;
     overflow: hidden; 
     padding: -6rem 1.5rem 1.5rem 1.5rem;
 }
@@ -69,8 +70,17 @@ header {
 
 /* ======================== MEDIA QUERIES (SMALL DEVICES)===================== */
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (min-width: 700px) {
+    .me {
+        background:linear-gradient(var(--color-primary), transparent);
+        width: 20rem;
+        height: 30rem;
+        position: absolute;
+        left: calc(50% - 9.8rem);
+        margin-top: 4rem;
+        border-radius: 1rem 1rem;
+        overflow: hidden;
+    }
 
 }
 

@@ -2,16 +2,25 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .portafolio__items {
     background:var(--color-bg-variant);
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: 0.7em;
+    margin: 1rem auto;
+    border-radius: 0.7rem;
+    
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
+.portafolio__items img {
+    width: 100%;
+    border-radius: 0.7rem;
+}
 .portafolio__items:hover {
     background: transparent;
     border-color: var(--color-primary-variant);

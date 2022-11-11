@@ -3,12 +3,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     overflow:auto;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .experience__container > div {
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
-    border-radius: 2rem;
+    border-radius: .5rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
@@ -29,6 +31,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    justify-items: center;
 }
 
 .experience__details {
@@ -67,4 +70,13 @@
         width: 100%;
         padding: 2rem 1rem;
     }
+}
+
+@media screen and  (max-width: 375px){
+    .experience__content {
+
+        grid-template-columns: 1fr ;
+
+    }
+    
 }

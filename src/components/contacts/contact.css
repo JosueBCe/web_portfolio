@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .contact__options {
