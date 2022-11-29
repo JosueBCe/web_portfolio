@@ -9,6 +9,10 @@ import {IoLogoSass} from "react-icons/io"
 import {SiPython} from "react-icons/si"
 import {SiMongodb} from "react-icons/si"
 import {SiNodedotjs} from "react-icons/si"
+import { SiAwsamplify } from "react-icons/si"
+import { SiShopify } from "react-icons/si"
+import { SiGraphql } from "react-icons/si"
+import { SiJquery } from "react-icons/si"
 
 
 const Experience = () => {
@@ -56,6 +60,28 @@ const Experience = () => {
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
+            <article className='experience__details'>
+              <SiAwsamplify className="experience__details-icon" />
+              <div>
+                <h4>AWS Amplify</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <SiShopify className="experience__details-icon" />
+              <div>
+                <h4>Shopify </h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <SiJquery className="experience__details-icon" />
+              <div>
+                <h4>Jquery</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+
           </div>
         </div>
         <div className='experience__backend'>
@@ -82,6 +108,14 @@ const Experience = () => {
                 <small className='text-light'>Basic</small>
               </div>
             </article>
+            <article className='experience__details'>
+              <SiGraphql className="experience__details-icon" />
+              <div>
+                <h4>GraphQL</h4>
+                <small className='text-light'>Basic</small>
+              </div>
+            </article>
+
           </div>
         </div>
       </div>

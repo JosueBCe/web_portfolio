@@ -62,6 +62,18 @@ const Portafolio = () => {
           <a href="https://josuebce.github.io/wdd230/chamber/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
           </div>
       </article>
+      <article className='portafolio__items'>
+        <h2>In Development Process: </h2>
+        <h3>The Fruit's Sweet</h3>
+        <div className="portafolio__item-cta">
+          <a href="https://www.figma.com/file/mG94KLAMDpSjWU858R5fSd/Fruit's-Sweet-Wireframe?node-id=0%3A1&t=URO9Hw7gojpHyKCo-1" target="_blank" className='btn'>Figma Wireframe</a>
+          </div>
+          <a href="https://josuebce.github.io/wdd230/lesson-12/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
+          <h3>Final Semester Project</h3>
+          <a href="https://github.com/JosueBCe/final-project-" target="_blank" className='btn'>GitHub</a>
+          <h3> AWS E-commerce </h3>
+          <a href="https://www.figma.com/file/Shh50gTndPqLpp2RdvfMUN/Ecommerce-Cloud-Computing-WireFrame?t=tazsIggrDM9V0j04-1" target="_blank" className='btn'>Figma Wireframe</a> 
+      </article>
       {/*
       <article className='portafolio__items'>
         <div className="portafolio__item-image">
