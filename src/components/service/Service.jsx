@@ -1,116 +1,105 @@
 import React from 'react'
 import "./service.css"
-import { FaRegCheckSquare } from "react-icons/fa"
+import Lottie from "lottie-react"
+import webdev from "../../assets/animations/web-dev.json"
+import uiux from "../../assets/animations/uiux.json"
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
-const Services = () => {
+
+
+
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+
+
+function Services() {
   return (
-    <section id='services' >
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+    <div className="services_container">
+      <h2 className="heading">Services</h2>
+      <Swiper
+        effect={'coverflow'}
+        scrollbar={{ draggable: true }}
+        loop={true}
+        slidesPerView={'auto'}
+        centeredSlidesBounds={true}
+        coverflowEffect={{
+          rotate: 8,
+          stretch: 490,
+          depth: 150,
+          modifier:2.7,
+          
+        }}
+        touchAngle={70}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+        speed={1000}
+      >
+     
+        <SwiperSlide>
+          <Lottie
+          animationData={uiux}
+          className='svg-animations'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Lottie
+          animationData={webdev}
+          className='svg-animations'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Lottie
+          animationData={uiux}
+          className='svg-animations'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Lottie
+          animationData={uiux}
+          className='svg-animations'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Lottie
+          animationData={uiux}
+          className='svg-animations'
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Lottie
+          animationData={webdev}
+          className='svg-animations'
+          />
+        </SwiperSlide>
 
-      <div className="container services__container">
-        <article className="service">
-          <div className="service__head">
-            <h3>UI/UX Design</h3>
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
-          <ul className='service__list'>
-            <li>
-              <FaRegCheckSquare />
-              <p> Wire-frame creation for each project.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p> Presentation of Site-Plan.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p> Benchmark analysis.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p> Best practices approach.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Continued improvement process.
-              </p>
-            </li>
-          </ul>
-        </article>
-        {/*END OF UI/UX*/}
-        <article className="service">
-          <div className="service__head">
-            <h3>Web Development</h3>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
-          <ul className='service__list'>
-            <li>
-              <FaRegCheckSquare />
-              <p>Full Responsive Design.</p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Flexible and Scalable Web Apps. </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Customized colors and design.</p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Customized architecture.
-
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Single Page aplicacation.</p>
-            </li>
-          </ul>
-        </article>
-        {/*END OF WEB DEVELOPMENT*/}
-        <article className="service">
-          <div className="service__head">
-            <h3>Content Creation</h3>
-          </div>
-          <ul className='service__list'>
-            <li>
-              <FaRegCheckSquare />
-              <p>Flexible approach.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Audience analysis and hooking writing techniques.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Web pages in Portuguese, English or Spanish.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Planning for regular Updating Content.
-              </p>
-            </li>
-            <li>
-              <FaRegCheckSquare />
-              <p>Search Engine Optimization.</p>
-            </li>
-          </ul>
-        </article>
-        {/*CONTENT CREATION*/}
-
-      </div>
-
-
-
-    </section>
-  )
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
+    </div>
+  );
 }
+
 
 export default Services

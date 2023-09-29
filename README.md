@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+Applied concepts in this portfolio! 
+
+React JS:
+- laguages continue editor and animations when scrolling down
+- 3d animations :https://www.youtube.com/watch?v=CHAepmqrv9E&list=PL-MP6pYtn9HMzT3i_lVm4xkHJIwqtPtsl&ab_channel=YetiLearn
+
+https://www.youtube.com/watch?v=uYp_ipIasYE&ab_channel=DesignCode
+- Routing to use concepts and try to apply different hooks 
+- FUNCITONALITY TO CHANGE TEXT IN THE EDITOR WHEN ONCHANGE 
+- Control flow statements (if/else, switch, loops)
+- 
+
+S
+
+
+animations of services: 
+https://lottiefiles.com/animations/uiux-spinach-video-yw7whPZE4I
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +86,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->

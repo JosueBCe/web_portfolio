@@ -11,23 +11,29 @@
 }
 
 :root{
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #1d97ee;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-bg: #343a40;
+    --color-bg-variant: #343a40;
+    --color-primary: #adb5bd;
+    --color-primary-variant: #dd6b10;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.935);
 
     --max-width: 1200px;
     --transition: all 400ms ease;
-    --container-width-lg: 75%;
+    --container-width-lg: 95%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
 }
 
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; /* Adjust as needed to offset any fixed headers or elements */
+}
+
+/* Optional: Add a transition effect to the scroll behavior */
+body {
+  transition: padding-top 0.3s ease-in;
 }
 
 ::-webkit-scrollbar {
@@ -36,10 +42,10 @@ html {
 
 body {
     font-family: "Poppins", sans-serif ;
-    background: var(--color-bg);
+    background: #fcffeb;
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(./assets/bg-texture.png);
+  /*   background-image: url(./assets/bg-texture.png); */
 
 
    
@@ -52,7 +58,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+:is(h1, h2, h3, h4, h5) {
     font-weight: 500;
 
 }
@@ -127,6 +133,7 @@ img {
     }
     section {
         margin-top: 6rem;
+ 
     }
 }
 

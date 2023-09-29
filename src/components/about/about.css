@@ -9,16 +9,17 @@
 .about__me {
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background: linear-gradient( 45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
     transform: rotate(10deg);
+    height: 53vh;
 }
 
 .about__me-image:hover {
@@ -46,7 +47,6 @@
 .about__card:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
-    cursor: default;
 }
 
 .about__icon {

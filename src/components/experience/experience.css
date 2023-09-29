@@ -7,9 +7,13 @@
     margin: 0 auto;
 }
 
+
+#experience {
+    padding: 2rem 0;
+}
 .experience__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 0rem 5rem 7rem 5rem;
     border-radius: .5rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -43,6 +47,48 @@
     margin-top: 6px;
 }
 
+
+.editor {
+    display: flex;
+    justify-content: center;
+    /* align-content: stretch; */
+    /* align-items: flex-start; */
+    margin-top: -4rem;
+    margin-bottom: -8rem;    
+    height: 100%;
+
+}
+
+.svg-animation {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    animation: borderEffect 1s linear infinite;
+    left: 10vh;
+    
+  }
+  
+  @keyframes borderEffect {
+    0% {
+      border-radius: 10px;
+
+    }
+    25% {
+      border-radius: 10px 10px 20px 15px;
+    
+    }
+    50% {
+      border-width: 20px 10px 50px 15px;
+
+    }
+    100% {
+      border-width: 5px 14px 20px 5px;
+
+    }
+  }
+
+
 /*======================= MEDIAS QUERIES (MEDIUM DEVICES)================================*/
 @media screen and (max-width: 1024px) {
     .experience__container {
@@ -53,7 +99,7 @@
     }
     .experience__container > div {
         width: 80%;
-        padding: 2rem;
+        padding: 0rem 2rem 5rem 2rem;
         margin: auto;
     }
     .experience__content {
@@ -68,7 +114,7 @@
     }
     .experience__container > div {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 5rem 2rem;
     }
 }
 

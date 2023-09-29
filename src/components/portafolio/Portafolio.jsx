@@ -1,106 +1,108 @@
-import React from 'react'
-import "./portafolio.css"
+import React, { useState, useRef } from 'react';
+import { useSprings, animated, to as interpolate } from '@react-spring/web';
+import { useDrag } from '@use-gesture/react';
+import video1 from "../../assets/gifs/html-gif.gif"
+import styles from './portafolio.module.css';
 
-import IMG2 from "../../assets/portfolio2.png"
-import IMG3 from "../../assets/portfolio3.png"
-import IMG4 from "../../assets/portfolio4.png"
-// import IMG5 from "../../assets/portfolio5.png"
-// import IMG6 from "../../assets/portfolio6.jpg"
-// import IMG1 from "../../assets/portfolio1.png"
+const cards = [
+ video1,
+  'https://vistumdevelopment.com/wp-content/uploads/2023/02/vistum-e1678760495316-300x257.png',
+  'https://vistumdevelopment.com/wp-content/uploads/2023/02/vistum-e1678760495316-300x257.png',
+  'https://vistumdevelopment.com/wp-content/uploads/2023/02/vistum-e1678760495316-300x257.png',
+];
 
-/* steps 
-1. Copy all 
-2. npm i and run build  
-3. create new repository locally 
-4. create online repository 
-*/
+const to = (i) => ({
+  x: -150,
+  y: i * -4,
+  scale: 1,
+  rot: -10 + Math.random() * 20,
+  delay: i * 10,
+});
 
-const Portafolio = () => {
+const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
+
+const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
+
+function Deck() {
+  const [visibleCards, setVisibleCards] = useState(cards.map(() => true));
+  const [gone, setGone] = useState(new Set());
+  const [props, api] = useSprings(cards.length, (i) => ({
+    ...to(i),
+    from: from(i),
+  }));
+
+  const containerRef = useRef(null);
+  const deckWidth = useRef(0);
+
+  const handleResize = () => {
+    deckWidth.current = containerRef.current.offsetWidth;
+  };
+
+  const bind = useDrag(({ args: [index], down, movement: [mx] }) => {
+    const limit = deckWidth.current / 2;
+    const isGone = Math.abs(mx) > limit;
+
+    if (!down && isGone) {
+      setGone((prevGone) => new Set(prevGone.add(index)));
+      setVisibleCards((prevVisibleCards) => {
+        const updatedVisibleCards = [...prevVisibleCards];
+        updatedVisibleCards[index] = false;
+        return updatedVisibleCards;
+      });
+    }
+
+    api.start((i) => {
+      if (index !== i) return;
+      const x = down ? mx : 0;
+      const rot = mx / 100 + (isGone ? (mx > 0 ? 1 : -1) * 10 : 0);
+      const scale = down ? 1.1 : 1;
+
+      return {
+        x,
+        rot,
+        scale,
+        delay: 0,
+        config: { friction: 50, tension: down ? 400 : isGone ? 500 : 500 },
+        onRest: () => {
+          if (isGone && gone.size === cards.length) {
+            setGone(new Set());
+              api.start((i) => to(i));
+              setVisibleCards(cards.map(() => true));
+           ;
+          }
+        },
+      };
+    });
+  });
+
   return (
-    <section id='portafolio' >
-      <h5>My Recent Work</h5>
-      <h2>Portafolio</h2>
-
-      <div className="container portafolio__container">
-        {/* <article className='portafolio__items'>
-          <div className="portafolio__item-image">
-            <img src={IMG1} alt="portafolio1" />
-          </div>
-          <h3>Water Rafting</h3>
-          <div className="portafolio__item-cta">
-            <a href="https://github.com/JosueBCe/wdd-130-/tree/main/wwr" className='btn' target={"_blank"}>GitHub</a>
-            <a href="https://josuebce.github.io/wdd-130-/wwr/index.html" className='btn btn-primary' target={"_blank"}>Live Demo</a>
-          </div>
-        </article> */}
-        <article className='portafolio__items'>
-          <div className="portafolio__item-image">
-            <img src={IMG2} alt="portafolio2" />
-          </div>
-          <h3>Multitrack Challenge </h3>
-          <div className="portafolio__item-cta">
-            <a href="https://github.com/JosueBCe/M_Track_challenge" className='btn' target={"_blank"}>GitHub</a>
-            <a href="https://josuebce.github.io/M_Track_challenge/#" className='btn btn-primary' target={"_blank"}>Live Demo</a>
-          </div>
-        </article>
-         <article className='portafolio__items'>
-        <div className="portafolio__item-image">
-          <img src={IMG3} alt="portafolio3" />
-        </div>
-        <h3> Chamber of Commerce Site-Plan </h3>
-        <div className="portafolio__item-cta">
-          <a href="https://github.com/JosueBCe/wdd230/tree/main/lesson3" className='btn'  target={"_blank"}>GitHub</a>
-          <a href="https://josuebce.github.io/wdd230/lesson3/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
-          </div>
-      </article>
-      <article className='portafolio__items'>
-        <div className="portafolio__item-image">
-          <img src={IMG4} alt="portafolio4" />
-        </div>
-        <h3>Argentine Chamber of Commerce </h3>
-        <div className="portafolio__item-cta">
-          <a href="https://github.com/JosueBCe/wdd230/tree/main/chamber" className='btn'>GitHub</a>
-          <a href="https://josuebce.github.io/wdd230/chamber/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
-          </div>
-      </article>
-      <article className='portafolio__items'>
-        <h2>In Development Process: </h2>
-        <h3>The Fruit's Sweet</h3>
-        <div className="portafolio__item-cta">
-          <a href="https://www.figma.com/file/mG94KLAMDpSjWU858R5fSd/Fruit's-Sweet-Wireframe?node-id=0%3A1&t=URO9Hw7gojpHyKCo-1" target="_blank" className='btn'>Figma Wireframe</a>
-          </div>
-          <a href="https://josuebce.github.io/wdd230/lesson-12/index.html" className='btn btn-primary' target="_blank">Live Demo</a>
-          <h3>Final Semester Project</h3>
-          <a href="https://github.com/JosueBCe/final-project-" target="_blank" className='btn'>GitHub</a>
-          <h3> AWS E-commerce </h3>
-          <a href="https://www.figma.com/file/Shh50gTndPqLpp2RdvfMUN/Ecommerce-Cloud-Computing-WireFrame?t=tazsIggrDM9V0j04-1" target="_blank" className='btn'>Figma Wireframe</a> 
-      </article>
-      {/*
-      <article className='portafolio__items'>
-        <div className="portafolio__item-image">
-          <img src={IMG5} alt="portafolio5" />
-        </div>
-        <h3>This is a portafolio item title</h3>
-          <div className="portafolio__item-cta">
-          <a href="https://github.com" className='btn'>GitHub</a>
-          <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
-          </div>
-      </article>
-      <article className='portafolio__items'>
-        <div className="portafolio__item-image">
-          <img src={IMG6} alt="portafolio6" />
-        </div>
-        <h3>This is a portafolio item title</h3>
-        <div className="portafolio__item-cta">
-          <a href="https://github.com" className='btn'>GitHub</a>
-          <a href="https://github.com" className='btn btn-primary' target="_blank">Live Demo</a>
-        </div>
-      </article> */}
-      </div>
-
-    </section>
-
-  )
+    <div className="container">
+    <div className={styles.deckContainer} ref={containerRef}>
+      <div className={styles.deckCenter}></div>
+      {props.map(({ x, y, rot, scale }, i) =>
+        visibleCards[i] ? (
+          <animated.div className={styles.deck} key={i} style={{ x, y }}>
+            <animated.div
+              {...bind(i)}
+              style={{
+                touchAction: 'none',
+                overflow: 'scroll',
+                transform: interpolate([rot, scale], trans),
+                backgroundImage: `url(${cards[i]})`,
+              }}
+            />
+          </animated.div>
+        ) : null
+      )}
+    </div>
+    </div>
+  );
 }
 
-
-export default Portafolio
+export default function Portafolio() {
+  return (
+    <div className={styles.containerPortafolio}>
+      <Deck />
+    </div>
+  );
+}
