@@ -17,35 +17,15 @@ const App = () => {
     <>
       <Nav />
       <FloatingElem />
-
-
       <Header />
-
-
-
-
-
-
       <About />
-
-
       <Experience />
-
-
       <Service />
-
       <div className='parentportafolio'>
         <Portafolio />
       </div>
-
-
       <Contact />
-
-
       <Footer />
-
-
-
     </>
   );
 }
