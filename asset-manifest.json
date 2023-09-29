@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.5b3c2e9d.css",
-    "main.js": "/web_portfolio/static/js/main.1fe61300.js",
-    "static/media/portfolio4.png": "/web_portfolio/static/media/portfolio4.715e0bfc0f89d9247a85.png",
-    "static/media/portfolio3.png": "/web_portfolio/static/media/portfolio3.a452adeabbb810c32f23.png",
+    "main.css": "/web_portfolio/static/css/main.cec0be01.css",
+    "main.js": "/web_portfolio/static/js/main.72cf5e67.js",
+    "static/media/video2.mp4": "/web_portfolio/static/media/video2.e9ffa3c3e2d8c6bbe60d.mp4",
+    "static/media/video1.mp4": "/web_portfolio/static/media/video1.5b3290f71255208346b4.mp4",
+    "static/media/portfolio1.png": "/web_portfolio/static/media/portfolio1.fd210475c1cde8168eb1.png",
+    "static/media/background2.jpg": "/web_portfolio/static/media/background2.f1a18c7e8a57316dce1f.jpg",
     "static/media/me...png": "/web_portfolio/static/media/me...773993c722329443cb3a.png",
-    "static/media/portfolio2.png": "/web_portfolio/static/media/portfolio2.aa62afb5fd5fb24756ee.png",
+    "static/media/Josue_Centurion_Resume.pdf": "/web_portfolio/static/media/Josue_Centurion_Resume.d3cc4c60b9295d52c83a.pdf",
     "static/media/me.jpeg": "/web_portfolio/static/media/me.f6c939bca8fdd90db658.jpeg",
-    "static/media/avatar2.jpg": "/web_portfolio/static/media/avatar2.a67d987ebf9f780e446d.jpg",
-    "static/media/avatar1.jpg": "/web_portfolio/static/media/avatar1.09e5f18b3f6f9ebb0675.jpg",
-    "static/media/Josue_Centurion_Resume.pdf": "/web_portfolio/static/media/Josue_Centurion_Resume.beb054f119d2bdbcb886.pdf",
+    "static/media/whoimmobile.png": "/web_portfolio/static/media/whoimmobile.cc78f6b1e897549a651f.png",
+    "static/media/whoim.png": "/web_portfolio/static/media/whoim.e7cff758eaeb738a87d6.png",
+    "static/media/html-gif.gif": "/web_portfolio/static/media/html-gif.e7c45848eb0f8b6245b1.gif",
     "index.html": "/web_portfolio/index.html",
-    "main.5b3c2e9d.css.map": "/web_portfolio/static/css/main.5b3c2e9d.css.map",
-    "main.1fe61300.js.map": "/web_portfolio/static/js/main.1fe61300.js.map"
+    "main.cec0be01.css.map": "/web_portfolio/static/css/main.cec0be01.css.map",
+    "main.72cf5e67.js.map": "/web_portfolio/static/js/main.72cf5e67.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b3c2e9d.css",
-    "static/js/main.1fe61300.js"
+    "static/css/main.cec0be01.css",
+    "static/js/main.72cf5e67.js"
   ]
 }
