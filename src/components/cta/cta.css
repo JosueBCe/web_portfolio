@@ -1,0 +1,31 @@
+.cta-container {
+    margin: 20px;
+  }
+  .cta-container.visible {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  .cta-container.hidden {
+    display: none;
+  }
+  
+  .cta-text {
+    color: rgba(128, 128, 128, 0.8);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    animation: fade-in-out 4s infinite;
+  }
+  
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -5,6 +5,7 @@
   }
   .services_container    {
     text-align: center;
+    margin: 10rem 1rem;
   }
   .swiper-slide {
     display: flex;
@@ -79,10 +80,20 @@
 
   .svg-animations {
     top: 40px;
-    left: 275px;
-    width: 400px;
+    width: 80%;
+    margin: 1rem auto;
+    
     height: 400px;
     object-fit: cover;
     animation: borderEffect 1s linear infinite;
     
   }
+
+
+  /* Responsive */
+
+  @media (min-width : 700px) {
+    .services_container    {
+      margin-bottom: 20rem;
+    }
+  } 

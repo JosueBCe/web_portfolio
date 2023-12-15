@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
+import Cta from '../cta/cta';
+
 
 const Card = ({ data }) => {
     const { backgroundImgMain, floatingImg1, floatingImg2, floatingTxt1, floatingTxt2, direction } = data;
@@ -13,13 +15,15 @@ const Card = ({ data }) => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     const cardClassName = `card ${direction}`;
-    console.log(direction)
+   
     return (
         <>
             <div className={cardClassName}
+            
                 style={{
                     transform: `translateY(-${offsetY * 0.5}px)`,
                 }}>
+                     <Cta text={"Hover Here"}/>
                 <div className="card--image">
                     <img src={backgroundImgMain} alt="image" />
                 </div>
@@ -41,7 +45,9 @@ const Card = ({ data }) => {
                         <img src={floatingImg2} alt="info image" />
                     </div>
                 </div>
+               
             </div>
+            
         </>
     );
 };

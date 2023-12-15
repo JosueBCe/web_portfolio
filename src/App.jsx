@@ -21,7 +21,9 @@ const App = () => {
       <About />
       <Experience />
       <Service />
+     
       <div className='parentportafolio'>
+        
         <Portafolio />
       </div>
       <Contact />

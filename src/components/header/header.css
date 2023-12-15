@@ -1,54 +1,60 @@
 header {
-    height: 100vh;
-    overflow: hidden;
+	height: 100vh;
+	overflow: hidden;
 }
 
 
 @keyframes morph {
-    0% {
-        border-radius: 70%/50%;
-    }
-    50% {
-        border-radius: 20% 20%/ 60% 30% 10% 40%;
-    }
-    100% {
-        border-radius:30% 90%/ 40% 30% 8% 40%;;
-    }
+	0% {
+		border-radius: 70%/50%;
+	}
+
+	50% {
+		border-radius: 20% 20%/ 60% 30% 10% 40%;
+	}
+
+	100% {
+		border-radius: 30% 90%/ 40% 30% 8% 40%;
+		;
+	}
 }
-.floating1, .floating2 { 
-    
-    transition: border-radius 1s ease-out;
-    border-radius: 1rem;
-    animation: morph 5s ease-in-out infinite both alternate;
-    position: absolute;
-    overflow: hidden;
-  
+
+.floating1,
+.floating2 {
+
+	transition: border-radius 1s ease-out;
+	border-radius: 1rem;
+	animation: morph 5s ease-in-out infinite both alternate;
+	position: absolute;
+	overflow: hidden;
+
 }
 
 .floating1 {
-    width: 40%;
-    height: 25%;
-    margin-left: 57%;
-    margin-top: 50%;
-    background-color: #FF9900;
-    border-radius: 25px;
-    padding: 2rem;
-   
+	width: 40%;
+	height: 25%;
+	margin-left: 57%;
+	margin-top: 50%;
+	background-color: #FF9900;
+	border-radius: 25px;
+	padding: 2rem;
+
 }
 
 .header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
-    max-width: var(--max-width);
-    margin: 0 auto;
+	text-align: center;
+	height: 100%;
+	position: relative;
+	max-width: var(--max-width);
+	margin: 0 auto;
 }
 
 
-video, img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+video,
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* =================== FLOATING CARDS ============================== */
@@ -58,7 +64,7 @@ video, img{
 	top: 100vh;
 	z-index: 1;
 	position: absolute;
-	width: clamp(100px, 40%, 250px );
+	width: clamp(100px, 40%, 250px);
 	height: 170px;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02),
 		0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03),
@@ -80,29 +86,30 @@ video, img{
 }
 
 .card--image {
-	width: 100%;
-	height: 100%;
+
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	overflow: hidden;
+	width: 100%;
+	border-radius: 1rem;
 }
 
 .card--image img {
-	width: 140%;
+	width: 100%;
 	height: 140%;
 	object-fit: cover;
+	border-radius: 1.5rem;
 }
 
 .card--info {
 	--size: 50px;
 	width: var(--size);
 	height: var(--size);
-	background: rgba(0, 0, 0, 0.75);
+	background: #ff730024;
 	border-radius: 2px;
 	position: absolute;
 	transition: width 550ms ease, height 550ms ease, right 550ms ease, background 550ms ease;
 	overflow: hidden;
+	object-fit: cover;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02),
 		0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03),
 		0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05),
@@ -121,36 +128,49 @@ video, img{
 	top: 0;
 	width: 100px;
 	height: 100px;
-	background: linear-gradient(
-		to top,
-		rgba(0, 0, 0, 0.65) 0%,
-		rgba(0, 0, 0, 0.25) 50%,
-		transparent 100%
-	);
+	background: linear-gradient(to top,
+			rgba(0, 0, 0, 0.65) 0%,
+			rgba(0, 0, 0, 0.25) 50%,
+			transparent 100%);
 	z-index: 1;
 	opacity: 0;
+	object-fit: cover;
 	transition: opacity 550ms ease;
+}
+
+.info--image img {
+	object-fit: cover;
 }
 
 .card--info.info--1 {
 	bottom: 47%;
 	right: 80%;
+	border-radius: 1rem;
 }
 
+
 .card--info.info--1 .info--image img {
-	top: -80%;
-	left: -20%;
+	top: 0%;
+	left: 0%;
+
+}
+
+.card--info.info--2 .info--image img {
+	top: 0%;
+	left: 0%;
 }
 
 .card--info.info--2 {
 	bottom: 25%;
 	right: 15%;
+	border-radius: 1rem;
 }
 
 .card--info.info--2 .info--image img {
 	right: -20%;
 	bottom: -80%;
 }
+
 .card--info .icon {
 	position: absolute;
 	width: 100%;
@@ -191,10 +211,10 @@ video, img{
 	overflow: hidden;
 }
 
-.card--info .info--image img{
+.card--info .info--image img {
 	position: absolute;
-	width: 340%;
-	height: 340%;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	opacity: 0;
 	transition: opacity 550ms ease;
@@ -202,7 +222,7 @@ video, img{
 
 .card:hover .card--info {
 	size: 100px;
-	
+
 }
 
 .card:hover .card--info::after {
@@ -231,119 +251,127 @@ video, img{
 	opacity: 1;
 	transform: translateY(0%);
 }
-.floating2 { 
-    width: 40%;
-    height: 25%;
-    margin-left: 3%;
-    margin-top: 100%;
-    border-radius: 25px;
-    padding: 2rem;
-    background-color: #343a40;
+
+.floating2 {
+	width: 40%;
+	height: 25%;
+	margin-left: 3%;
+	margin-top: 100%;
+	border-radius: 25px;
+	padding: 2rem;
+	background-color: #343a40;
 }
 
-.floating1 p, .floating2 p {
-    font-size: .8rem !important;
-    word-wrap: break-word;
-  }
+.floating1 p,
+.floating2 p {
+	font-size: .8rem !important;
+	word-wrap: break-word;
+}
 
 /* =============================== CTA ========================== */
 .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+	margin-top: 2.5rem;
+	display: flex;
+	gap: 1.2rem;
+	justify-content: center;
 }
 
 /* ================== HEADER SOCIALS ================  */
 .header_socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	position: absolute;
+	left: 0;
+	bottom: 3rem;
 }
 
 .header_socials::after {
-    content: "";
-    width: 2px;
-    height: 2rem;
-    background: var(--color-primary);
-    
+	content: "";
+	width: 2px;
+	height: 2rem;
+	background: var(--color-primary);
+
 }
 
 /* ============== ME =========================== */
 .me {
-    background:linear-gradient(var(--color-primary), transparent);
-    width: 16rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 7.8rem);
-    margin-top: 3rem;
-    border-radius: 1rem 1rem;
-    overflow: hidden; 
-    padding: -6rem 1.5rem 1.5rem 1.5rem;
+	background: linear-gradient(var(--color-primary), transparent);
+	width: 16rem;
+	height: 30rem;
+	position: absolute;
+	left: calc(50% - 7.8rem);
+	margin-top: 3rem;
+	border-radius: 1rem 1rem;
+	overflow: hidden;
+	padding: -6rem 1.5rem 1.5rem 1.5rem;
 }
 
 
 /* ======================== SCROLL DOWN =================== */
 .scroll_down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 500;
-    font-size: 1rem;
-    
+	position: absolute;
+	right: -2.3rem;
+	bottom: 5rem;
+	transform: rotate(90deg);
+	font-weight: 500;
+	font-size: 1rem;
+
 }
 
 /* ======================== MEDIA QUERIES (SMALL DEVICES)===================== */
 
 @media screen and (min-width: 1200px) {
-    
-	.card {width: 350px;
-		height: 370px;}
-	
-		.card.left {
-			/* min, avaible space, max value */
-			left: 50vh
-		}
-		
-		
-		.card.right {
-			right: 50vh;
-		}
-		
+
+	.card {
+		width: 350px;
+		height: 370px;
+	}
+
+	.card.left {
+		/* min, avaible space, max value */
+		left: 50vh
+	}
+
+
+	.card.right {
+		right: 50vh;
+	}
+
 
 }
 
 
 /* ======================== SMALL QUERIES (SMALL DEVICES)===================== */
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
+	
 	.card.left {
 		/* min, avaible space, max value */
-		left: 7vh;
-		top: 60vh;
+		left: 5vh;
+		top: 125vh;
+		max-width: 200px;
+	
+	    height: fit-content;
 	}
-	
-	
+
+
 	.card.right {
-		right: 7vh;
-		top: 40vh;
+		right: 5vh;
+		top: 105vh;
+		max-width: 200px;
+		height: fit-content;
 	}
-	
+
 }
 
 @media screen and (max-width: 700px) {
 
-    .header_socials , .scroll_down {
-        display: none;
-    }
+	.header_socials,
+	.scroll_down {
+		display: none;
+	}
 
 
 }
-
-
-
