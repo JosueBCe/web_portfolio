@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.cec0be01.css",
-    "main.js": "/web_portfolio/static/js/main.72cf5e67.js",
+    "main.css": "/web_portfolio/static/css/main.6daa2b1c.css",
+    "main.js": "/web_portfolio/static/js/main.5f70b8c2.js",
     "static/media/video2.mp4": "/web_portfolio/static/media/video2.e9ffa3c3e2d8c6bbe60d.mp4",
-    "static/media/video1.mp4": "/web_portfolio/static/media/video1.5b3290f71255208346b4.mp4",
+    "static/media/videoTablet.mp4": "/web_portfolio/static/media/videoTablet.aa7a36a6d0fe6ad595aa.mp4",
+    "static/media/videoMobile.mp4": "/web_portfolio/static/media/videoMobile.01d10fa772f0f86894c2.mp4",
+    "static/media/me2.png": "/web_portfolio/static/media/me2.49c6bbcc1087bd1e6111.png",
     "static/media/portfolio1.png": "/web_portfolio/static/media/portfolio1.fd210475c1cde8168eb1.png",
     "static/media/background2.jpg": "/web_portfolio/static/media/background2.f1a18c7e8a57316dce1f.jpg",
     "static/media/me...png": "/web_portfolio/static/media/me...773993c722329443cb3a.png",
     "static/media/Josue_Centurion_Resume.pdf": "/web_portfolio/static/media/Josue_Centurion_Resume.d3cc4c60b9295d52c83a.pdf",
-    "static/media/me.jpeg": "/web_portfolio/static/media/me.f6c939bca8fdd90db658.jpeg",
     "static/media/whoimmobile.png": "/web_portfolio/static/media/whoimmobile.cc78f6b1e897549a651f.png",
     "static/media/whoim.png": "/web_portfolio/static/media/whoim.e7cff758eaeb738a87d6.png",
     "static/media/html-gif.gif": "/web_portfolio/static/media/html-gif.e7c45848eb0f8b6245b1.gif",
     "index.html": "/web_portfolio/index.html",
-    "main.cec0be01.css.map": "/web_portfolio/static/css/main.cec0be01.css.map",
-    "main.72cf5e67.js.map": "/web_portfolio/static/js/main.72cf5e67.js.map"
+    "main.6daa2b1c.css.map": "/web_portfolio/static/css/main.6daa2b1c.css.map",
+    "main.5f70b8c2.js.map": "/web_portfolio/static/js/main.5f70b8c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cec0be01.css",
-    "static/js/main.72cf5e67.js"
+    "static/css/main.6daa2b1c.css",
+    "static/js/main.5f70b8c2.js"
   ]
 }
